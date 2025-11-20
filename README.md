@@ -23,11 +23,11 @@ The app allows users to enter a **keyword**, choose whether to scrape a **single
 
 
 ### **Final Output**
-> _Place an image here_  
 <img width="1840" height="1020" alt="Screenshot 2025-11-20 112510" src="https://github.com/user-attachments/assets/cdf2ee79-74c3-4f72-89c4-e0ed28a2cbfd" />
 <img width="1727" height="723" alt="Screenshot 2025-11-20 112447" src="https://github.com/user-attachments/assets/c9fde122-3279-4995-abe2-867674f78480" />
 <img width="1720" height="685" alt="Screenshot 2025-11-20 112456" src="https://github.com/user-attachments/assets/71d26645-1262-48a8-9c0b-a123f16eb523" />
 
+### **Excel Output**
 <img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/5f7d47c9-44d2-4e8a-be9d-44091b4e650f" />
 
 ---
