@@ -1,2 +1,209 @@
-# AI-Powered-Lead-Qualification-Engine
-An AI-assisted lead qualification system that scrapes game-development jobs, classifies them using rule-based logic, enriches company data, and computes ICP scores with an intelligent scoring engine.
+# 🌟 AI-Powered Lead Qualification Engine  
+### Python • Streamlit • Selenium • Pandas • Groq API
+
+An intelligent Streamlit-based system that scrapes game-development job listings from Hitmarker and evaluates each lead using an AI-assisted ICP (Ideal Customer Profile) scoring engine.  
+
+The app allows users to enter a **keyword**, choose whether to scrape a **single page or all pages**, and then automatically processes the scraped jobs through an AI-powered qualification pipeline.
+
+---
+
+## 📌 Short Description
+**An AI-powered lead qualification system that scrapes Hitmarker job listings, enriches each role using configurable rules, and generates ICP scores based on service relevance, industry alignment, region, company size, and revenue.**
+
+---
+
+# 📸 Screenshots (Placeholders)
+
+### **Dashboard Home**
+> _Place an image here_  
+`![Dashboard Screenshot](docs/images/dashboard_home.png)`
+
+### **Scraping in Progress**
+> _Place an image here_  
+`![Scraping Process](docs/images/scraping_process.png)`
+
+### **Final Output**
+> _Place an image here_  
+`![Results Table](docs/images/results_table.png)`
+
+---
+
+# 🚀 Features
+
+### 🔍 **1. Keyword-based Web Scraping (Hitmarker)**
+- Enter any job keyword (e.g., *“unreal”, “3d artist”, “unity developer”*)
+- Choose:
+  - **Scrape Single Page**
+  - **Scrape All Pages**
+- Selenium with undetected-chromedriver
+- Image-blocking mode for performance
+- Clean extraction of:
+  - Job Title  
+  - Company  
+  - Location  
+  - URL  
+
+---
+
+### 🤖 **2. AI-Driven Qualification Engine**
+Runs automatically on scraped jobs.
+
+Performs:
+
+- **Service Classification**  
+  (Maps titles into Art, Co-Dev, Full, None)
+- **Industry Detection**  
+  (Gaming vs Non-gaming)
+- **Company Stats Estimation**  
+  - HQ region  
+  - Employee range  
+  - Revenue tier  
+- **ICP Score Calculation**  
+  Weighted scoring across:
+  - Region  
+  - Service relevance  
+  - Revenue  
+  - Employee size  
+  - Industry match  
+
+---
+
+### 📊 **3. Streamlit Dashboard**
+User-friendly UI:
+
+- Keyword input  
+- “Scrape All Pages” toggle  
+- Real-time scraping logs  
+- Interactive Data Table  
+- Download as:
+  - `.xlsx`
+
+---
+
+### 💾 **4. Automatic Caching Layer**
+All expensive operations are cached:
+
+| Cache File | Purpose |
+|------------|---------|
+| `classify_cache.json` | Title → service bucket |
+| `company_cache.json` | Company stats |
+| `industry_cache.json` | Industry classification |
+| `trusted_stats.json` | Pre-loaded for known game studios |
+
+Speeds up re-runs dramatically.
+
+---
+
+# 🏗 Folder Structure
+
+AI-Powered Lead Qualification Engine/
+│── dashboard.py
+│── scraper.py
+│── qualifier_engine.py
+│
+├── config/
+│ ├── icp_rules.json
+│ ├── industry_mapping.json
+│ ├── region_mapping.json
+│ ├── revenue_mapping.json
+│ └── service_mapping.json
+│
+├── cache/
+│ ├── classify_cache.json
+│ ├── company_cache.json
+│ ├── industry_cache.json
+│ └── trusted_stats.json
+│
+└── pycache/
+
+
+# ⚙️ Installation
+
+### **1. Create environment**
+python -m venv venv
+venv/Scripts/activate
+
+### **2. Install the required Packages**
+pip install -r requirements.txt
+
+### **3. Add environment variable**
+create .env in root:
+GROQ_API_KEY=your_key_here
+
+
+▶️ Usage
+**Start the Streamlit App:**
+streamlit run dashboard.py
+
+**Workflow inside UI**
+1.Enter a keyword → “unreal”, “3d artist”, “unity developer”, etc
+
+2.Choose:
+Scrape single page
+Or Scrape all pages
+
+3.Hit SCRAPE
+
+4.Data is scraped via Selenium
+
+5.AI qualification engine runs automatically
+
+6.Final results (with ICP score) shown on screen
+
+7.Download Excel/CSV
+
+
+📊 ICP Scoring Model
+Five weighted components
+| Component      | Weight |
+| -------------- | ------ |
+| Employee Range | 25%    |
+| Revenue Range  | 25%    |
+| Region Match   | 20%    |
+| Service Bucket | 15%    |
+| Industry Match | 15%    |
+
+
+**Qualification Decision**
+A company is Qualified if:
+Legacy rule set passes
+OR Weighted ICP ≥ threshold (default = 75)
+
+
+🔧 Configuration Files
+| File                    | Use                        |
+| ----------------------- | -------------------------- |
+| `service_mapping.json`  | Maps job titles → services |
+| `region_mapping.json`   | Normalizes region names    |
+| `revenue_mapping.json`  | Allowed revenue tiers      |
+| `industry_mapping.json` | Gaming & non-gaming lists  |
+| `icp_rules.json`        | Score weights & thresholds |
+
+You can freely modify these files to adapt scoring logic.
+
+
+**Architecture Diagram**
+
+<img width="2400" height="882" alt="Untitled diagram-2025-11-20-062727" src="https://github.com/user-attachments/assets/729b499d-755c-4c9d-8434-13fdc73af1f3" />
+
+**Screenshots**
+<img width="1843" height="1020" alt="Screenshot 2025-11-20 112342" src="https://github.com/user-attachments/assets/605668db-d5ef-4587-bcfe-246765b0eeb7" />
+<img width="1840" height="1020" alt="Screenshot 2025-11-20 112510" src="https://github.com/user-attachments/assets/cdf2ee79-74c3-4f72-89c4-e0ed28a2cbfd" />
+<img width="1727" height="723" alt="Screenshot 2025-11-20 112447" src="https://github.com/user-attachments/assets/c9fde122-3279-4995-abe2-867674f78480" />
+<img width="1727" height="723" alt="Screenshot 2025-11-20 112447" src="https://github.com/user-attachments/assets/130b72b2-0d5e-4eff-a55a-ef3c7642de5a" />
+<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/5f7d47c9-44d2-4e8a-be9d-44091b4e650f" />
+
+
+
+🛣 **Roadmap**
+1.Add LinkedIn integration
+2.Add Indeed integration
+
+
+📜 **License**
+This project is licensed under the MIT License.
+See the LICENSE file for details.
+
+👤 **Author**
+Created by Shashank Kamath
+For academic + industry use.
