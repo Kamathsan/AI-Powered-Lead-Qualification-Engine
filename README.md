@@ -15,16 +15,19 @@ The app allows users to enter a **keyword**, choose whether to scrape a **single
 # 📸 Screenshots (Placeholders)
 
 ### **Dashboard Home**
-> _Place an image here_  
-`![Dashboard Screenshot](docs/images/dashboard_home.png)`
+<img width="1824" height="993" alt="image" src="https://github.com/user-attachments/assets/f68ce1bc-d40b-4d7e-8331-41dec27c9e56" />
+
 
 ### **Scraping in Progress**
-> _Place an image here_  
-`![Scraping Process](docs/images/scraping_process.png)`
+<img width="1828" height="982" alt="image" src="https://github.com/user-attachments/assets/0646dc42-f8b7-42c2-9d14-4bfb031b1188" />
+
 
 ### **Final Output**
 > _Place an image here_  
-`![Results Table](docs/images/results_table.png)`
+<img width="1840" height="1020" alt="Screenshot 2025-11-20 112510" src="https://github.com/user-attachments/assets/cdf2ee79-74c3-4f72-89c4-e0ed28a2cbfd" />
+<img width="1727" height="723" alt="Screenshot 2025-11-20 112447" src="https://github.com/user-attachments/assets/c9fde122-3279-4995-abe2-867674f78480" />
+<img width="1727" height="723" alt="Screenshot 2025-11-20 112447" src="https://github.com/user-attachments/assets/130b72b2-0d5e-4eff-a55a-ef3c7642de5a" />
+<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/5f7d47c9-44d2-4e8a-be9d-44091b4e650f" />
 
 ---
 
