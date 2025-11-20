@@ -99,25 +99,8 @@ Speeds up re-runs dramatically.
 
 # 🏗 Folder Structure
 
-AI-Powered Lead Qualification Engine/
-│── dashboard.py
-│── scraper.py
-│── qualifier_engine.py
-│
-├── config/
-│ ├── icp_rules.json
-│ ├── industry_mapping.json
-│ ├── region_mapping.json
-│ ├── revenue_mapping.json
-│ └── service_mapping.json
-│
-├── cache/
-│ ├── classify_cache.json
-│ ├── company_cache.json
-│ ├── industry_cache.json
-│ └── trusted_stats.json
-│
-└── pycache/
+<img width="333" height="524" alt="image" src="https://github.com/user-attachments/assets/9115478f-01db-4c99-8b63-4824f86cd23b" />
+
 
 
 # ⚙️ Installation
