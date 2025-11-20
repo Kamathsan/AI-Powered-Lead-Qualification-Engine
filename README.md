@@ -101,7 +101,7 @@ Speeds up re-runs dramatically.
 
 <img width="333" height="524" alt="image" src="https://github.com/user-attachments/assets/9115478f-01db-4c99-8b63-4824f86cd23b" />
 
-
+---
 
 # ⚙️ Installation
 
@@ -116,7 +116,7 @@ pip install -r requirements.txt
 create .env in root:
 GROQ_API_KEY=your_key_here
 
-
+---
 ▶️ Usage
 **Start the Streamlit App:**
 streamlit run dashboard.py
@@ -137,7 +137,7 @@ Or Scrape all pages
 6.Final results (with ICP score) shown on screen
 
 7.Download Excel/CSV
-
+---
 
 📊 ICP Scoring Model
 Five weighted components
@@ -149,13 +149,13 @@ Five weighted components
 | Service Bucket | 15%    |
 | Industry Match | 15%    |
 
-
+---
 **Qualification Decision**
 A company is Qualified if:
 Legacy rule set passes
 OR Weighted ICP ≥ threshold (default = 75)
 
-
+---
 🔧 Configuration Files
 | File                    | Use                        |
 | ----------------------- | -------------------------- |
@@ -172,24 +172,16 @@ You can freely modify these files to adapt scoring logic.
 
 <img width="2400" height="882" alt="Untitled diagram-2025-11-20-062727" src="https://github.com/user-attachments/assets/729b499d-755c-4c9d-8434-13fdc73af1f3" />
 
-**Screenshots**
-<img width="1843" height="1020" alt="Screenshot 2025-11-20 112342" src="https://github.com/user-attachments/assets/605668db-d5ef-4587-bcfe-246765b0eeb7" />
-<img width="1840" height="1020" alt="Screenshot 2025-11-20 112510" src="https://github.com/user-attachments/assets/cdf2ee79-74c3-4f72-89c4-e0ed28a2cbfd" />
-<img width="1727" height="723" alt="Screenshot 2025-11-20 112447" src="https://github.com/user-attachments/assets/c9fde122-3279-4995-abe2-867674f78480" />
-<img width="1727" height="723" alt="Screenshot 2025-11-20 112447" src="https://github.com/user-attachments/assets/130b72b2-0d5e-4eff-a55a-ef3c7642de5a" />
-<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/5f7d47c9-44d2-4e8a-be9d-44091b4e650f" />
-
-
-
+---
 🛣 **Roadmap**
 1.Add LinkedIn integration
 2.Add Indeed integration
-
+---
 
 📜 **License**
 This project is licensed under the MIT License.
 See the LICENSE file for details.
-
+---
 👤 **Author**
 Created by Shashank Kamath
 For academic + industry use.
