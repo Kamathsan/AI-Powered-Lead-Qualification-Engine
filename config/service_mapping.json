@@ -1,0 +1,21 @@
+{
+  "animation": ["Animation", "Art"],
+  "animator": ["Animation", "Art"],
+  "vfx": ["VFX", "Art"],
+  "technical artist": ["Technical Art", "Art"],
+  "technical animator": ["Technical Animation", "Art"],
+  "engineer": ["Programming", "Co-Dev"],
+  "programmer": ["Programming", "Co-Dev"],
+  "engine programmer": ["Programming", "Co-Dev"],
+  "tools": ["Programming Tools", "Co-Dev"],
+  "producer": ["Game Production", "Full"],
+  "level designer": ["Game Production", "Full"],
+  "design": ["Game Development", "Full"],
+  "ui": ["UI/UX", "Art"],
+  "ux": ["UI/UX", "Art"],
+  "render": ["Rendering", "Co-Dev"],
+  "rig": ["Rigging", "Art"],
+  "lighting": ["Lighting", "Art"],
+  "narrative": ["Narrative Design", "Art"],
+  "gameplay": ["Game Development", "Full"]
+}

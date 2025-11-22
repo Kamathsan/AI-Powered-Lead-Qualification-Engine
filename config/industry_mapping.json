@@ -1,0 +1,13 @@
+{
+  "trusted_game_companies": [
+    "ubisoft","epic games","riot games","cd projekt red","bethesda",
+    "activision","blizzard","respawn","naughty dog","take-two",
+    "square enix","nintendo","playstation","scopely","keywords studios",
+    "gameloft","supercell","behaviour interactive","dices",
+    "insomniac","rockstar","ea","sony","konami","remedy"
+  ],
+  "forced_non_gaming": [
+    "linkedin","tcs","infosys","deloitte","bosch",
+    "walmart","cognizant","accenture","capgemini","hcl"
+  ]
+}

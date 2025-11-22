@@ -1,0 +1,15 @@
+{
+  "good_regions": [
+    "united states","usa","canada","france","uk",
+    "germany","japan","china","finland","sweden",
+    "poland","australia","singapore","india"
+  ],
+  "weights": {
+    "employees": 25,
+    "revenue": 25,
+    "region": 20,
+    "service": 15,
+    "industry": 15
+  },
+  "score_threshold": 75
+}
