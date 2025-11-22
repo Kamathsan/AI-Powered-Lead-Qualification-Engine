@@ -12,7 +12,7 @@ The app allows users to enter a **keyword**, choose whether to scrape a **single
 
 ---
 
-# 📸 Screenshots (Placeholders)
+# 📸 Screenshots
 
 ### **Dashboard Home**
 <img width="1824" height="993" alt="image" src="https://github.com/user-attachments/assets/f68ce1bc-d40b-4d7e-8331-41dec27c9e56" />
